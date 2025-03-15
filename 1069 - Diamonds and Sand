@@ -1,0 +1,29 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+	int n;
+	cin>>n;
+	for (int i=1; i<=n; i++) {
+		int l=0,c=0;
+		string s;
+		cin>>s;
+		for (int k=0; k<s.size(); k++) {
+			if(s[k]=='<') l++;
+			if(s[k]=='>') {
+				
+				if(l>0) {
+					c++;
+					l--;
+				}
+			}
+		}
+		cout<< c<<endl;
+
+
+
+	}
+
+	return 0;
+}

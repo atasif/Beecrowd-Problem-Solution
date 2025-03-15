@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+
+	string s1,s2;
+	cin>>s1>>s2;
+	int si1=s1.size();
+	int si2=s2.size();
+
+
+	if(s1[0]==s2[0]&&s1[1]==s2[1]) {
+		if(si1>si2) {
+			cout<< s2<<endl<<s1<<endl;
+		}
+		else  cout<< s1<<endl<<s2<<endl;
+	}
+	else if(s1[0]>s2[0])  cout<< s2<<endl<<s1<<endl;
+	else if(s1[0]<s2[0])  cout<< s1<<endl<<s2<<endl;
+	return 0;
+}

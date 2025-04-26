@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main()
+{
+    long int a;
+    int hour,minute,second;
+    scanf("%ld",&a);
+    hour=a/3600;
+    minute=(a-(hour*3600))/60;
+    second=a-((hour*3600)+(minute*60));
+    printf("%d:%d:%d\n",hour,minute,second);
+    return 0;
+}

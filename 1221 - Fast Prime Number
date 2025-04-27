@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include<math.h>
+ 
+int main() {
+ 
+int n,notprime=0;
+ long int x;
+scanf("%d",&n);
+for (int i =1;i<=n;i++){
+    notprime=0;
+    scanf("%ld",&x);
+    if(x == 0){
+                 printf("Not Prime\n");
+                 continue;
+            }
+            
+          else  if(x == 1){
+                 printf("Not Prime\n");
+                 continue;
+            }
+            
+         else   if(x == 2){
+                 printf("Prime\n");
+                 continue;
+            } 
+    for(int j=2;j<=sqrt( x );j++){
+        if (x%j==0){
+        notprime++;
+        break;
+      }           
+    }
+    if (notprime==0)printf("Prime\n");
+    else printf("Not Prime\n");    
+}
+ 
+    return 0;
+}

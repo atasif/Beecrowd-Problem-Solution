@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main ()
+{
+    int position ,great[100],i,j=0;
+
+    for(i=0; i<100; i++)
+    {
+        scanf("%d",&great[i]);
+    }
+    for(i=0; i<100; i++)
+
+    {
+        if(great[i]>=j){
+                j=great[i];
+                position=i+1;
+        }
+    }
+
+    printf("%d\n%d\n",j,position);
+    return 0;
+}

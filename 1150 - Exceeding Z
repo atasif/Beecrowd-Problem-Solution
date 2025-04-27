@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main ()
+{
+    int x,y,sum=0,count=0;
+    scanf("%d%d",&x,&y);
+    while(y<=x)
+    {
+        scanf("%d",&y);
+    }
+    int i=x;
+do{
+    sum+=i;
+    count++;
+    i++;
+}while(sum<y);
+
+
+    printf("%d\n",count);
+
+    return 0;
+}

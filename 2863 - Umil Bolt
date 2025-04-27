@@ -1,0 +1,27 @@
+#include <stdio.h>
+int main ()
+{
+    int t;
+
+
+    while ((scanf("%d",&t))!=EOF)
+    {       
+        float array[t],temp;
+        scanf("%f",&array[0]);
+
+        for(int i=1; i<t; i++)
+        {
+            scanf("%f",&array[i]);
+
+            if (array[0]>=array[i])
+            {
+                temp=   array[0];
+                array[0]=array[i];
+                array[i]=temp;
+            }
+        }
+printf("%.2f\n",array[0]);
+
+    }
+    return 0;
+}

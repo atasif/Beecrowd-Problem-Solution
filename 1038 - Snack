@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main()
+{
+
+    int a,b;
+    float amount;
+    scanf("%d%d",&a,&b);
+    switch(a)
+    {
+    case 1:
+        amount = 4.00*(float)b;
+        break;
+    case 2:
+        amount =4.50*(float)b;
+        break;
+        case 3:
+        amount =5.0*(float)b;
+        break;
+        case 4:
+        amount =2.0*(float)b;
+        break;
+        default :
+        amount =1.50*(float)b;
+
+        }
+
+    printf("Total: R$ %.2f\n",amount);
+
+return 0;
+}

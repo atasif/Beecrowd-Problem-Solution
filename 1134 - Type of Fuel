@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main ()
+{
+    int fual,a=0,d=0,g=0;
+    while(1)
+    {
+whil:
+        scanf("%d",&fual);
+        if (fual == 1)  a++;
+        if (fual == 2)   g++;
+        if (fual == 3)  d++;
+        if (fual == 4) break;
+        else  goto whil ;
+    }
+    printf("MUITO OBRIGADO\nAlcool: %d\nGasolina: %d\nDiesel: %d\n",a,g,d);
+    return 0;
+}

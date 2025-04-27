@@ -1,0 +1,16 @@
+#include <stdio.h>
+ 
+int main() {
+ int x,count=0,i;
+ scanf("%d",&x);
+ for(i=x; ;i++)
+ {
+     if (i%2!=0){
+         printf("%d\n",i);
+         count++;
+
+     }
+     if (count==6) break;
+ }
+    return 0;
+}

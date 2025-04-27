@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main (){
+
+float v,d,length;
+double area;
+while ((scanf("%f%f",&v,&d))!=EOF)
+{
+   length=v/( 3.14*(d/2)*(d/2));
+    area=3.14*(d/2)*(d/2);
+    printf("ALTURA = %.2f\nAREA = %.2lf\n",length,area);
+
+}
+
+return 0;
+}

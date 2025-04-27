@@ -2,7 +2,6 @@
 
 Welcome to my first public repository of solutions of problems! 👋
 
-This project contains solutions to Beecrowd (formerly URI Online Judge) problems, organized by problem number and name.
-All solutions are written in C and C++ to help beginners and tech-learning students who are practicing programming and problem-solving skills.
+This project contains solutions to Beecrowd (formerly URI Online Judge) problems, arranged by problem number and name. Each suggestion is written in C or C++, which makes it easier for beginners and tech-learning students to understand the problem's solution concept while enhancing their programming and problem-solving abilities.
 
 Thanks to all!!........

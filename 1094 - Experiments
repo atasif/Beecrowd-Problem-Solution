@@ -1,0 +1,41 @@
+#include <stdio.h>
+int main ()
+{
+    int x,n,sum=0,rat=0,frog=0,rabbit=0;
+    char ch,y='%';
+    scanf("%d",&n);
+    for(int i=1; i<=n; i++)
+    {
+        scanf("%d %c",&x,&ch);
+        sum+=x;
+
+        if (ch=='R')
+        {
+            rat+=x;
+        }
+        else if (ch=='S')
+        {
+            frog+=x;
+        }
+        else
+        {
+            rabbit+=x;
+        }
+ }
+
+double ratos,rabbitos,frogs;
+ratos=(rat*100.00)/sum;
+
+
+ printf("Total: %d cobaias\n",sum);
+printf("Total de coelhos: %d\n",rabbit);
+printf("Total de ratos: %d\n",rat);
+printf("Total de sapos: %d\n",frog);
+
+printf("Percentual de coelhos: %.2lf %c\n",(rabbit*100.00)/sum,y);
+printf("Percentual de ratos: %.2lf %c\n",ratos,y);
+printf("Percentual de sapos: %.2lf %c\n",(frog*100.00)/sum,y);
+
+
+    return 0;
+}
